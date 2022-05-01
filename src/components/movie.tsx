@@ -21,12 +21,14 @@ export default function Movie({ movie }: Props) {
     <div className='mb-3 group'>
       <img src={imgSrc} alt='movie poster' onError={onImgError} />
       <div className='group-hover:text-white transition-all duration-200 line-clamp-1'>
-        {movie.name.split(re).map((part, i) => (
-          // eslint-disable-next-line react/no-array-index-key
-          <span key={part + i} className={part.toLowerCase() === query.toLowerCase() ? 'text-orange-300' : ''}>
-            {part}
-          </span>
-        ))}
+        {query !== ''
+          ? movie.name.split(re).map((part, i) => (
+              // eslint-disable-next-line react/no-array-index-key
+              <span key={part + i} className={part.toLowerCase() === query.toLowerCase() ? 'text-orange-300' : ''}>
+                {part}
+              </span>
+            ))
+          : movie.name}
       </div>
     </div>
   );
