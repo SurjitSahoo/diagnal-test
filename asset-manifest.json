@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/pet-catalogue/static/css/main.03ead8e2.css",
+    "main.js": "/pet-catalogue/static/js/main.0888c058.js",
+    "static/js/272.ec56798e.chunk.js": "/pet-catalogue/static/js/272.ec56798e.chunk.js",
+    "static/js/3.88488544.chunk.js": "/pet-catalogue/static/js/3.88488544.chunk.js",
+    "static/js/202.75fc3a72.chunk.js": "/pet-catalogue/static/js/202.75fc3a72.chunk.js",
+    "static/js/787.9136de7f.chunk.js": "/pet-catalogue/static/js/787.9136de7f.chunk.js",
+    "index.html": "/pet-catalogue/index.html",
+    "main.03ead8e2.css.map": "/pet-catalogue/static/css/main.03ead8e2.css.map",
+    "main.0888c058.js.map": "/pet-catalogue/static/js/main.0888c058.js.map",
+    "787.9136de7f.chunk.js.map": "/pet-catalogue/static/js/787.9136de7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03ead8e2.css",
+    "static/js/main.0888c058.js"
+  ]
+}
