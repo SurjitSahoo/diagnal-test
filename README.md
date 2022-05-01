@@ -33,7 +33,7 @@
 # NOTE
 
 > - Redux-Create-Store, redux-reducer and few other patterns are deprecated, currently [redux-toolkit](https://redux-toolkit.js.org/) is the recommended way for using redux in react.
-> - But redux-toolkit doesn't support infinite scroll feature by default, it's fairly simple to implement within component, but the data wont be available globally. Other option is to create a custom hook, it can get complicated to implement and it will also void the cashing feature, so it's not worth it in my opinion.
+> - But redux-toolkit doesn't support infinite scroll feature by default, it's fairly simple to implement within component, but the data wont be available globally. Other option is to create a custom hook, it can get complicated to implement and it will also void the caching feature, so it's not worth it in my opinion.
 > - I've implemented using redux-saga, hence it has no caching.
 > - I'm not a big fan of redux, I've only used it because the requirement specifically asked for it. Otherwise I prefer [React-Query](https://react-query.tanstack.com/), with this the app could have a lot better user-experience. In bigger applications it's a noteworthy difference.
 
