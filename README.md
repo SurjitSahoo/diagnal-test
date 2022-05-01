@@ -1,13 +1,13 @@
-# Dummy Pet-Store App for EDB Assignment
+# Dummy Movie-List App for DIAGNAL Assignment
 
-[Checkout the app](https://surjitsahoo.github.io/pet-catalogue/) deployed in GitHub-Pages
+[Checkout the app](https://surjitsahoo.github.io/diagnal-test/) deployed in GitHub-Pages
 
 ## To run the app in local system
 
 - Clone the repository
 
   ```sh
-  git clone https://github.com/SurjitSahoo/pet-catalogue.git
+  git clone https://github.com/SurjitSahoo/diagnal-test.git
   ```
 
 - install dependencies
@@ -22,19 +22,20 @@
   npm start
   ```
 
-- start json-server
-
-  ```sh
-  npm run json-server
-  ```
-
 ## Specs
 
-- Eslint, prettier and husky configurations for static code analysis, code-formatting and avoiding unintended bad-code push to the repository
-- [React-Query](https://react-query.tanstack.com/) for managing and caching server side state
+- [Eslint](https://eslint.org/), [Prettier](https://prettier.io/) and [husky](https://typicode.github.io/husky/) configurations for static code analysis, code-formatting and for adding git-hooks to avoid unintended bad-code push to the repository
 - [Tailwind css](https://tailwindcss.com/) for styling the app.
+- [Redux-Saga](https://redux-saga.js.org/) for managing global state
 
-## To take it futher
+# NOTE
+
+> - Redux-Create-Store, redux-reducer and few other patterns are deprecated, currently [redux-toolkit](https://redux-toolkit.js.org/) is the recommended way for using redux in react.
+> - But redux-toolkit doesn't support infinite scroll feature by default, it's fairly simple to implement within component, but the data wont be available globally. Other option is to create a custom hook, it can get complicated to implement and it will also void the cashing feature, so it's not worth it in my opinion.
+> - I've implemented using redux-saga, hence it has no caching.
+> - I'm not a big fan of redux, I've only used it because the requirement specifically asked for it. Otherwise I prefer [React-Query](https://react-query.tanstack.com/), with this the app could have a lot better user-experience. In bigger applications it's a noteworthy difference.
+
+## To take it further
 
 - Add new Pages by creating new pages in `src/pages` directory and then registering new routes in `src/routes/index.ts` file.
 - Add new components in `src/components` directory
