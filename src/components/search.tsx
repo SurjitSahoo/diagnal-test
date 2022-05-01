@@ -1,6 +1,7 @@
-import { ChangeEvent, forwardRef, useEffect, useState } from 'react';
+import { ChangeEvent, forwardRef, useEffect, useMemo, useState } from 'react';
 import actions from 'globalState/actions';
 import { useDispatch } from 'react-redux';
+import lodash from 'lodash';
 
 export default forwardRef<HTMLInputElement>(function Search(_, ref) {
   const [query, setQuery] = useState('');
@@ -11,9 +12,13 @@ export default forwardRef<HTMLInputElement>(function Search(_, ref) {
     setQuery(e.target.value);
   };
 
-  useEffect(() => {
-    dispatch(actions.updateSearchQuery(query.trim()));
+  const debouncedSearch = useMemo(() => {
+    return lodash.debounce(() => dispatch(actions.updateSearchQuery(query.trim())), 500);
   }, [dispatch, query]);
+
+  useEffect(() => {
+    debouncedSearch();
+  }, [debouncedSearch]);
 
   return (
     <input
