@@ -40,6 +40,7 @@
 - Add new Pages by creating new pages in `src/pages` directory and then registering new routes in `src/routes/index.ts` file.
 - Add new components in `src/components` directory
 
+<hr>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
