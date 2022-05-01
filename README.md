@@ -2,6 +2,8 @@
 
 [Checkout the app](https://surjitsahoo.github.io/diagnal-test/) deployed in GitHub-Pages
 
+> Please Open the app in mobile browser, as it's not optimized for desktop browsers
+
 ## To run the app in local system
 
 - Clone the repository
